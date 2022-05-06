@@ -3,7 +3,7 @@
 FROM ubuntu:18.04 as build
 
 RUN apt-get -y update
-RUN apt-get -y install git autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
+RUN apt-get -y install git autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build
 RUN apt-get -y install python3 # also required by riscv-gnu-toolchain
 
 RUN mkdir /src && \
