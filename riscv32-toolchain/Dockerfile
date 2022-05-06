@@ -25,7 +25,7 @@ RUN cd /src/riscv-gnu-toolchain/qemu && \
 #RUN cd /src && \
 #  git clone https://git.qemu.org/git/qemu.git && \
 #  cd qemu && \
-#  ./configure --prefix=/riscv32 --static --disable-system --target-list=riscv32-linux-user && \
+#  ./configure --prefix=/riscv32 --static --target-list=riscv32-linux-user && \
 #  make -j 8 && \
 #  make install
 
