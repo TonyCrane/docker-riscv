@@ -22,4 +22,4 @@ jobs:
           context: riscv32-toolchain
           push: true
           file: riscv32-toolchain/Dockerfile
-          tags: latest
+          tags: tonycrane/riscv32-toolchain:latest
