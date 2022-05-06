@@ -18,7 +18,7 @@ RUN apt-get -y install python3 pkg-config libglib2.0-dev libpixman-1-dev
 
 # QEMU is not built automatically
 RUN cd /src/riscv-gnu-toolchain/qemu && \
-  ./configure --prefix=/riscv32 --static --disable-system --target-list=riscv32-linux-user && \
+  ./configure --prefix=/riscv32 --static --target-list=riscv32-linux-user && \
   make -j 8 && \
   make install
 
